@@ -32,9 +32,10 @@ git clone https://github.com/muhammadqodir1313/SMDJ-Group.git
 
 **Birinchi marta (bir marta):**
 
-1. GitHub repoda **Settings → Pages**
-2. **Build and deployment → Source:** `GitHub Actions` tanlang
-3. `main` ga push qiling yoki **Actions** tabida workflow ni qo‘lda ishga tushiring
+1. [Settings → Pages](https://github.com/muhammadqodir1313/SMDJ-Group/settings/pages)
+2. **Source:** `Deploy from a branch`
+3. **Branch:** `gh-pages` / **folder:** `/ (root)`
+4. Saqlang — workflow `main` ga push qilganda `gh-pages` branchni yangilaydi
 
 **Sayt manzili:** https://muhammadqodir1313.github.io/SMDJ-Group/
 
