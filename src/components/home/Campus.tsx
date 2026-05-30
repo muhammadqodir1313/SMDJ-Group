@@ -1,0 +1,3 @@
+export function Campus() {
+  return <section className="bg-white py-16"><div className="mx-auto max-w-6xl px-4 md:px-6"><h2 className="text-2xl font-bold text-[#0F2747] md:text-3xl">Kampus va infratuzilma</h2><p className="mt-4 max-w-3xl text-slate-700">Zamonaviy sinfxonalar, STEAM laboratoriyasi, sport maydoni va kutubxona bolalarning har tomonlama rivojlanishiga xizmat qiladi.</p><div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[1,2,3,4].map((item)=><div key={item} className="flex h-32 items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500">Galereya surati {item}</div>)}</div></div></section>;
+}

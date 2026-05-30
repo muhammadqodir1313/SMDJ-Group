@@ -1,0 +1,4 @@
+import Link from "next/link";
+export function Hero() {
+  return <section className="bg-gradient-to-br from-[#0F2747] to-[#1B3E6D] text-white"><div className="mx-auto max-w-6xl px-4 py-20 md:px-6 md:py-28"><p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#D4AF37]">SMDJ Group</p><h1 className="max-w-3xl text-3xl font-bold leading-tight md:text-5xl">SMDJ Group xususiy maktabi</h1><p className="mt-5 max-w-2xl text-base text-slate-200 md:text-lg">Farzandingiz uchun zamonaviy ta'lim va individual rivojlanish yo'li.</p><div className="mt-8 flex flex-wrap gap-4"><Link href="/admissions" className="rounded-full bg-[#D4AF37] px-6 py-3 text-sm font-semibold text-[#0F2747]">Qabulga yozilish</Link><Link href="/about" className="rounded-full border border-white/60 px-6 py-3 text-sm font-semibold text-white">Maktab haqida ma'lumot</Link></div></div></section>;
+}

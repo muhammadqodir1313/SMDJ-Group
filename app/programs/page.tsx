@@ -1,0 +1,5 @@
+import { Metadata } from "next";
+import Link from "next/link";
+import { programs } from "@/src/data/programs";
+export const metadata: Metadata = { title: "Ta'lim dasturlari", description: "Boshlang'ich, o'rta, yuqori va qo'shimcha dasturlar haqida ma'lumot." };
+export default function ProgramsPage() { return <section className="mx-auto max-w-6xl px-4 py-16 md:px-6"><h1 className="text-3xl font-bold text-[#0F2747]">Ta'lim dasturlari</h1><div className="mt-8 grid gap-5 md:grid-cols-2">{programs.map((program)=><article key={program.id} className="rounded-2xl bg-white p-6 shadow-sm"><p className="text-xs font-semibold uppercase tracking-wide text-[#0F2747]">{program.level}</p><h2 className="mt-2 text-xl font-semibold">{program.title}</h2><p className="mt-3 text-slate-700">{program.description}</p><ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-slate-600">{program.goals.map((goal)=><li key={goal}>{goal}</li>)}</ul><Link href="/contact" className="mt-4 inline-block text-sm font-semibold text-[#0F2747] underline">Batafsil ma'lumot so'rash</Link></article>)}</div></section>; }
