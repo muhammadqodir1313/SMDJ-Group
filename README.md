@@ -38,6 +38,12 @@ git clone https://github.com/muhammadqodir1313/SMDJ-Group.git
 
 **Sayt manzili:** https://muhammadqodir1313.github.io/SMDJ-Group/
 
+## Deploy (Vercel)
+
+Production: **https://smdj-school.vercel.app**
+
+GitHub repozitoriy Vercel bilan bog‘langan — keyingi pushlarda avtomatik deploy bo‘ladi.
+
 Mahalliy tekshiruv (GitHub Pages yo‘li bilan):
 
 ```bash
