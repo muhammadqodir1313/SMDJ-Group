@@ -26,16 +26,24 @@ Repozitoriy: [https://github.com/muhammadqodir1313/SMDJ-Group](https://github.co
 git clone https://github.com/muhammadqodir1313/SMDJ-Group.git
 ```
 
-## Deploy (Vercel — tavsiya)
+## Deploy (GitHub Pages)
 
-Next.js uchun eng oson yo‘l — [Vercel](https://vercel.com):
+`main` branchga push qilinganda [GitHub Actions](.github/workflows/deploy-pages.yml) saytni avtomatik yig‘adi va chiqaradi.
 
-1. [vercel.com](https://vercel.com) ga kiring (GitHub bilan login).
-2. **Add New → Project** → `SMDJ-Group` repozitoriyini tanlang.
-3. Framework: **Next.js** (avtomatik aniqlanadi).
-4. **Deploy** bosing — 1–2 daqiqadan keyin `*.vercel.app` havola beriladi.
+**Birinchi marta (bir marta):**
 
-Keyin **Settings → Domains** orqali o‘z domeningizni ulashingiz mumkin.
+1. GitHub repoda **Settings → Pages**
+2. **Build and deployment → Source:** `GitHub Actions` tanlang
+3. `main` ga push qiling yoki **Actions** tabida workflow ni qo‘lda ishga tushiring
+
+**Sayt manzili:** https://muhammadqodir1313.github.io/SMDJ-Group/
+
+Mahalliy tekshiruv (GitHub Pages yo‘li bilan):
+
+```bash
+set GITHUB_PAGES=true&& npm run build
+npx serve out
+```
 
 ## Qisqa izoh
 
